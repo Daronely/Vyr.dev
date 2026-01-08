@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vyr - Simple Select AI">
+    <title>Vyr - Simple Select AI</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../../UI/Image/ico/icon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../UI/AI/SSAI/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- ========== PARTICLES BACKGROUND ========== -->
+    <div id="particles-bg" class="particles-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <!-- لوگو -->
+            <a href="../../Main/index.html" class="logo" dir="ltr">
+                <span class="logo-text">
+                    <span class="logo-letter logo-v">V</span>
+                    <span class="logo-letter logo-y">y</span>
+                    <span class="logo-letter logo-r">r</span>
+                </span>
+                <span class="logo-glow"></span>
+            </a>
+
+            <!-- عنوان صفحه -->
+            <div class="page-title">
+                <span class="title-icon">🎯</span>
+                <span class="title-text">Simple Select AI</span>
+            </div>
+
+            <!-- دکمه‌ها -->
+            <div class="nav-actions">
+                <!-- دکمه تغییر تم -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <div class="theme-toggle-wrapper">
+                        <span class="theme-icon sun">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="5"/>
+                                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                            </svg>
+                        </span>
+                        <span class="theme-icon moon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                            </svg>
+                        </span>
+                    </div>
+                </button>
+                
+                <!-- دکمه برگشت -->
+                <a href="../../Main/index.html" class="btn btn-outline">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    <span>برگشت</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="hero-icon">
+                    <span>🎯</span>
+                    <div class="icon-rings">
+                        <div class="ring ring-1"></div>
+                        <div class="ring ring-2"></div>
+                        <div class="ring ring-3"></div>
+                    </div>
+                </div>
+                <h1 class="hero-title">Simple Select AI</h1>
+                <p class="hero-description">
+                    سوال خود را بپرسید و جواب ساده دریافت کنید
+                    <br>
+                    <span class="highlight">فقط Yes یا No</span>
+                </p>
+            </div>
+
+            <!-- AI Box -->
+            <div class="ai-box">
+                <div class="ai-box-glow"></div>
+                
+                <!-- Input Section -->
+                <div class="input-section">
+                    <div class="input-wrapper">
+                        <textarea 
+                            id="user-input" 
+                            class="ai-input" 
+                            placeholder="سوال یا جمله خود را اینجا بنویسید..."
+                            rows="3"
+                        ></textarea>
+                        <div class="input-border"></div>
+                    </div>
+                    
+                    <button id="submit-btn" class="submit-btn">
+                        <span class="btn-text">دریافت جواب</span>
+                        <span class="btn-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </span>
+                        <div class="btn-loader">
+                            <div class="loader-spinner"></div>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Divider -->
+                <div class="divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-text">جواب</span>
+                    <span class="divider-line"></span>
+                </div>
+
+                <!-- Result Section -->
+                <div class="result-section" id="result-section">
+                    <div class="result-placeholder" id="result-placeholder">
+                        <div class="placeholder-icon">💭</div>
+                        <p>جواب اینجا نمایش داده می‌شود</p>
+                    </div>
+                    
+                    <div class="result-answer hidden" id="result-answer">
+                        <div class="answer-box" id="answer-box">
+                            <span class="answer-text" id="answer-text"></span>
+                        </div>
+                        <div class="answer-glow" id="answer-glow"></div>
+                    </div>
+
+                    <div class="result-error hidden" id="result-error">
+                        <div class="error-icon">⚠️</div>
+                        <p class="error-text" id="error-text">خطایی رخ داد</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Cards -->
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="card-icon">✅</div>
+                    <h3>Yes</h3>
+                    <p>صحیح، منطقی یا قابل انجام</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">❌</div>
+                    <h3>No</h3>
+                    <p>نادرست، نامطمئن یا ناقص</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>سریع</h3>
+                    <p>پاسخ فوری و دقیق</p>
+                </div>
+            </div>
+
+            <!-- Examples -->
+            <div class="examples-section">
+                <h3 class="examples-title">💡 مثال‌ها</h3>
+                <div class="examples-grid">
+                    <button class="example-btn" data-example="The Earth revolves around the Sun">
+                        <span>🌍</span>
+                        The Earth revolves around the Sun
+                    </button>
+                    <button class="example-btn" data-example="Water boils at 50 degrees Celsius">
+                        <span>💧</span>
+                        Water boils at 50°C
+                    </button>
+                    <button class="example-btn" data-example="Python is a programming language">
+                        <span>🐍</span>
+                        Python is a programming language
+                    </button>
+                    <button class="example-btn" data-example="Humans can breathe underwater without equipment">
+                        <span>🏊</span>
+                        Humans can breathe underwater
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>
+                    <span class="footer-brand" dir="ltr">Vyr</span> 
+                    - Simple Select AI
+                </p>
+                <p class="footer-copyright">© <span id="current-year"></span></p>
+            </div>
+        </div>
+        <div class="footer-line">
+            <div class="line-glow"></div>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script>
+        // ===== API CONFIGURATION =====
+        const API_URL = 'http://localhost:3001/api/ssai';
+
+        // ===== DOM ELEMENTS =====
+        const userInput = document.getElementById('user-input');
+        const submitBtn = document.getElementById('submit-btn');
+        const resultPlaceholder = document.getElementById('result-placeholder');
+        const resultAnswer = document.getElementById('result-answer');
+        const resultError = document.getElementById('result-error');
+        const answerText = document.getElementById('answer-text');
+        const answerBox = document.getElementById('answer-box');
+        const answerGlow = document.getElementById('answer-glow');
+        const errorText = document.getElementById('error-text');
+        const exampleBtns = document.querySelectorAll('.example-btn');
+
+        // ===== THEME TOGGLE =====
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', savedTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // ===== SET CURRENT YEAR =====
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // ===== API CALL FUNCTION =====
+        async function getAIResponse(userMessage) {
+            const response = await fetch(API_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    message: userMessage
+                })
+            });
+
+            const data = await response.json();
+
+            if (!data.success) {
+                throw new Error(data.error || 'خطای ناشناخته');
+            }
+
+            return data.answer;
+        }
+
+        // ===== SHOW RESULT FUNCTION =====
+        function showResult(answer) {
+            resultPlaceholder.classList.add('hidden');
+            resultError.classList.add('hidden');
+            resultAnswer.classList.remove('hidden');
+            
+            answerText.textContent = answer;
+            
+            // رنگ بر اساس جواب
+            if (answer === 'Yes') {
+                answerBox.className = 'answer-box answer-yes';
+                answerGlow.className = 'answer-glow glow-yes';
+            } else if (answer === 'No') {
+                answerBox.className = 'answer-box answer-no';
+                answerGlow.className = 'answer-glow glow-no';
+            } else {
+                answerBox.className = 'answer-box';
+                answerGlow.className = 'answer-glow';
+            }
+
+            // انیمیشن
+            answerBox.classList.add('animate');
+            setTimeout(() => {
+                answerBox.classList.remove('animate');
+            }, 600);
+        }
+
+        // ===== SHOW ERROR FUNCTION =====
+        function showError(message) {
+            resultPlaceholder.classList.add('hidden');
+            resultAnswer.classList.add('hidden');
+            resultError.classList.remove('hidden');
+            errorText.textContent = message;
+        }
+
+        // ===== SET LOADING STATE =====
+        function setLoading(isLoading) {
+            if (isLoading) {
+                submitBtn.classList.add('loading');
+                submitBtn.disabled = true;
+                userInput.disabled = true;
+            } else {
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
+                userInput.disabled = false;
+            }
+        }
+
+        // ===== SUBMIT HANDLER =====
+        async function handleSubmit() {
+            const message = userInput.value.trim();
+            
+            if (!message) {
+                showError('لطفاً یک سوال یا جمله وارد کنید');
+                return;
+            }
+
+            setLoading(true);
+            
+            try {
+                const answer = await getAIResponse(message);
+                showResult(answer);
+            } catch (error) {
+                showError(error.message || 'خطا در ارتباط با سرور. لطفاً دوباره تلاش کنید.');
+            } finally {
+                setLoading(false);
+            }
+        }
+
+        // ===== EVENT LISTENERS =====
+        submitBtn.addEventListener('click', handleSubmit);
+
+        userInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                handleSubmit();
+            }
+        });
+
+        // Example buttons
+        exampleBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                userInput.value = btn.dataset.example;
+                userInput.focus();
+            });
+        });
+
+        // ===== INPUT FOCUS EFFECT =====
+        userInput.addEventListener('focus', () => {
+            userInput.parentElement.classList.add('focused');
+        });
+
+        userInput.addEventListener('blur', () => {
+            userInput.parentElement.classList.remove('focused');
+        });
+    </script>
+</body>
+</html>

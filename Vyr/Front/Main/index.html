@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vyr - پلتفرم حرفه‌ای">
+    <title>Vyr - MainMenu</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../UI/Image/ico/icon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../UI/Main/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- ========== LOADING SCREEN ========== -->
+    <div id="loader" class="loader">
+        <div class="loader-container">
+            <div class="loader-letters" dir="ltr">
+                <span class="letter letter-v">V</span>
+                <span class="letter letter-y">y</span>
+                <span class="letter letter-y-clone">y</span>
+                <span class="letter letter-r">r</span>
+            </div>
+            
+            <div class="electric-ring">
+                <div class="spark spark-1"></div>
+                <div class="spark spark-2"></div>
+                <div class="spark spark-3"></div>
+                <div class="spark spark-4"></div>
+                <div class="spark spark-5"></div>
+                <div class="spark spark-6"></div>
+                <div class="spark spark-7"></div>
+                <div class="spark spark-8"></div>
+            </div>
+            
+            <div class="loader-particles">
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        
+        <div class="loader-progress">
+            <div class="progress-bar"></div>
+            <span class="progress-text">0%</span>
+        </div>
+    </div>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <div id="main-content" class="main-content hidden">
+        
+        <div class="custom-cursor" id="custom-cursor"></div>
+        <div class="cursor-follower" id="cursor-follower"></div>
+        
+        <div id="particles-bg" class="particles-bg">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <!-- ========== HEADER / NAVBAR ========== -->
+        <header class="header" id="header">
+            <nav class="navbar">
+                <a href="javascript:location.reload();" class="logo" dir="ltr">
+                    <span class="logo-text">
+                        <span class="logo-letter logo-v">V</span>
+                        <span class="logo-letter logo-y">y</span>
+                        <span class="logo-letter logo-r">r</span>
+                    </span>
+                    <span class="logo-glow"></span>
+                    <div class="logo-particles">
+                        <span></span><span></span><span></span>
+                        <span></span><span></span><span></span>
+                        <span></span><span></span>
+                    </div>
+                </a>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">
+                            <span class="nav-icon">🏠</span>
+                            <span>خانه</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            <span class="nav-icon">🤖</span>
+                            <span>AI</span>
+                            <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a href="../AI/SSAI/index.html">
+                                    <span class="dropdown-icon">🎯</span>
+                                    <div class="dropdown-content">
+                                        <span class="dropdown-title">Simple Select AI</span>
+                                        <span class="dropdown-desc">هوش مصنوعی ساده و سریع</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="../AI/PAI/index.html">
+                                    <span class="dropdown-icon">💎</span>
+                                    <div class="dropdown-content">
+                                        <span class="dropdown-title">Pro AI</span>
+                                        <span class="dropdown-desc">هوش مصنوعی حرفه‌ای</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="../AI/XAI/index.html">
+                                    <span class="dropdown-icon">🚀</span>
+                                    <div class="dropdown-content">
+                                        <span class="dropdown-title">XAI</span>
+                                        <span class="dropdown-desc">هوش مصنوعی پیشرفته</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="../AI/CAI/index.html">
+                                    <span class="dropdown-icon">🧮</span>
+                                    <div class="dropdown-content">
+                                        <span class="dropdown-title">Calc AI</span>
+                                        <span class="dropdown-desc">ماشین حساب هوشمند</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            <span class="nav-icon">🎮</span>
+                            <span>iTz</span>
+                            <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a href="../iTz/iTzChat/index.html">
+                                    <span class="dropdown-icon">💬</span>
+                                    <div class="dropdown-content">
+                                        <span class="dropdown-title">iTz-Chat</span>
+                                        <span class="dropdown-desc">چت آنلاین</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="../iTz/iTzCalc/index.html">
+                                    <span class="dropdown-icon">🔢</span>
+                                    <div class="dropdown-content">
+                                        <span class="dropdown-title">iTz-Calc</span>
+                                        <span class="dropdown-desc">ماشین حساب پیشرفته</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="../iTz/iTzSoon/index.html">
+                                    <span class="dropdown-icon">⏳</span>
+                                    <div class="dropdown-content">
+                                        <span class="dropdown-title">iTz-Soon</span>
+                                        <span class="dropdown-desc">به زودی...</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">
+                            <span class="nav-icon">✨</span>
+                            <span>امکانات</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#pricing" class="nav-link">
+                            <span class="nav-icon">💎</span>
+                            <span>پلن‌ها</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                        <div class="theme-toggle-wrapper">
+                            <span class="theme-icon sun">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="5"/>
+                                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                                </svg>
+                            </span>
+                            <span class="theme-icon moon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </button>
+                    
+                    <!-- دکمه ورود -->
+                    <a href="../Start/S.html" class="btn btn-outline btn-login">
+                        <span>ورود</span>
+                    </a>
+                    
+                    <!-- دکمه شروع رایگان -->
+                    <a href="../Start/S.html" class="btn btn-primary btn-signup">
+                        <span>شروع رایگان</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span class="hamburger">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </span>
+                </button>
+            </nav>
+        </header>
+
+        <!-- ========== HERO SECTION ========== -->
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <div class="hero-gradient"></div>
+                <div class="hero-grid"></div>
+                <div class="hero-glow"></div>
+            </div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <!-- بج نسخه 2.0 -->
+                    <a href="../Start/S.html" class="hero-badge animate-fade-up">
+                        <span class="badge-icon">🚀</span>
+                        <span class="badge-text">نسخه 2.0 منتشر شد!</span>
+                        <svg class="badge-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+
+                    <h1 class="hero-title animate-fade-up delay-1">
+                        <span class="title-line">آینده را با</span>
+                        <span class="title-highlight">
+                            <span class="highlight-text" dir="ltr">Vyr</span>
+                            <span class="highlight-decoration"></span>
+                        </span>
+                        <span class="title-line">تجربه کنید</span>
+                    </h1>
+
+                    <p class="hero-description animate-fade-up delay-2">
+                        پلتفرم نسل جدید با قدرت هوش مصنوعی. سریع‌تر، هوشمندتر و قدرتمندتر از همیشه.
+                        <br>
+                        همین حالا به جمع هزاران کاربر حرفه‌ای بپیوندید.
+                    </p>
+
+                    <div class="hero-buttons animate-fade-up delay-3">
+                        <!-- دکمه شروع رایگان -->
+                        <a href="../Start/S.html" class="btn btn-primary btn-large btn-glow">
+                            <span>شروع رایگان</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <!-- دکمه مشاهده دمو -->
+                        <a href="../Start/S.html" class="btn btn-glass btn-large">
+                            <span class="btn-icon">▶</span>
+                            <span>مشاهده دمو</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-stats animate-fade-up delay-4">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-suffix">K+</span>
+                            <span class="stat-label">کاربر فعال</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="99">0</span>
+                            <span class="stat-suffix">%</span>
+                            <span class="stat-label">رضایت</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="24">0</span>
+                            <span class="stat-suffix">/7</span>
+                            <span class="stat-label">پشتیبانی</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual animate-fade-up delay-5">
+                    <div class="hero-mockup">
+                        <div class="mockup-glow"></div>
+                        <div class="mockup-frame">
+                            <div class="mockup-header">
+                                <span class="mockup-dot red"></span>
+                                <span class="mockup-dot yellow"></span>
+                                <span class="mockup-dot green"></span>
+                            </div>
+                            <div class="mockup-content">
+                                <div class="mockup-line"></div>
+                                <div class="mockup-line short"></div>
+                                <div class="mockup-line medium"></div>
+                                <div class="mockup-card"></div>
+                                <div class="mockup-card small"></div>
+                            </div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-el el-1">⚡</div>
+                            <div class="floating-el el-2">🔮</div>
+                            <div class="floating-el el-3">✨</div>
+                            <div class="floating-el el-4">🎯</div>
+                            <div class="floating-el el-5">💎</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-wave">
+                <svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none">
+                    <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="currentColor"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- ========== FEATURES SECTION ========== -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge animate-on-scroll">✨ امکانات</span>
+                    <h2 class="section-title animate-on-scroll">
+                        چرا <span class="text-gradient" dir="ltr">Vyr</span> را انتخاب کنید؟
+                    </h2>
+                    <p class="section-description animate-on-scroll">
+                        امکانات پیشرفته‌ای که کار شما را متحول می‌کند
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">
+                            <span>🚀</span>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3 class="feature-title">سرعت فوق‌العاده</h3>
+                        <p class="feature-description">
+                            با بهینه‌ترین الگوریتم‌ها، سریع‌ترین تجربه را داشته باشید
+                        </p>
+                        <a href="../Start/S.html" class="feature-link">
+                            <span>بیشتر بدانید</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">
+                            <span>🤖</span>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3 class="feature-title">هوش مصنوعی</h3>
+                        <p class="feature-description">
+                            قدرت AI در خدمت شما برای تجربه‌ای هوشمندانه
+                        </p>
+                        <a href="../Start/S.html" class="feature-link">
+                            <span>بیشتر بدانید</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">
+                            <span>🔒</span>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3 class="feature-title">امنیت بالا</h3>
+                        <p class="feature-description">
+                            رمزنگاری پیشرفته و حفاظت از داده‌های شما
+                        </p>
+                        <a href="../Start/S.html" class="feature-link">
+                            <span>بیشتر بدانید</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">
+                            <span>🎨</span>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3 class="feature-title">طراحی زیبا</h3>
+                        <p class="feature-description">
+                            رابط کاربری مدرن و چشم‌نواز برای بهترین تجربه
+                        </p>
+                        <a href="../Start/S.html" class="feature-link">
+                            <span>بیشتر بدانید</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">
+                            <span>📱</span>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3 class="feature-title">ریسپانسیو</h3>
+                        <p class="feature-description">
+                            در هر دستگاهی عالی به نظر می‌رسد
+                        </p>
+                        <a href="../Start/S.html" class="feature-link">
+                            <span>بیشتر بدانید</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">
+                            <span>💬</span>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3 class="feature-title">پشتیبانی 24/7</h3>
+                        <p class="feature-description">
+                            همیشه در کنار شما هستیم
+                        </p>
+                        <a href="../Start/S.html" class="feature-link">
+                            <span>بیشتر بدانید</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PRICING SECTION ========== -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge animate-on-scroll">💎 پلن‌ها</span>
+                    <h2 class="section-title animate-on-scroll">
+                        پلن مناسب خود را <span class="text-gradient">انتخاب کنید</span>
+                    </h2>
+                    <p class="section-description animate-on-scroll">
+                        با هر بودجه‌ای، بهترین خدمات را دریافت کنید
+                    </p>
+                    
+                    <div class="pricing-toggle animate-on-scroll">
+                        <span class="toggle-label" data-period="monthly">ماهانه</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="pricing-switch">
+                            <span class="toggle-slider"></span>
+                        </label>
+                        <span class="toggle-label" data-period="yearly">
+                            سالانه
+                            <span class="discount-badge">تخفیف!</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- پلن رایگان -->
+                    <div class="pricing-card animate-on-scroll">
+                        <div class="pricing-header">
+                            <span class="pricing-icon">🎁</span>
+                            <h3 class="pricing-name">رایگان</h3>
+                            <p class="pricing-description">برای شروع عالیه</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-amount">0</span>
+                            <span class="price-currency">تومان</span>
+                            <span class="price-period">/ ماهانه</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>دسترسی به تمامی ابزارها</span>
+                            </li>
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>100 مگابایت فضای ذخیره‌سازی</span>
+                            </li>
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>API رایگان و ضعیف</span>
+                            </li>
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>پشتیبانی در روزهای کاری</span>
+                            </li>
+                            <li class="feature-excluded">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 6L6 18M6 6l12 12"/>
+                                </svg>
+                                <span>دسترسی به هوش مصنوعی اصلی</span>
+                            </li>
+                        </ul>
+                        <a href="../Start/S.html" class="btn btn-outline btn-full">
+                            <span>شروع رایگان</span>
+                        </a>
+                    </div>
+
+                    <!-- پلن اقتصادی -->
+                    <div class="pricing-card animate-on-scroll">
+                        <div class="pricing-header">
+                            <span class="pricing-icon">💰</span>
+                            <h3 class="pricing-name">اقتصادی</h3>
+                            <p class="pricing-description">مقرون به صرفه</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-amount" data-monthly="89,000" data-yearly="85,000">89,000</span>
+                            <span class="price-currency">تومان</span>
+                            <span class="price-period">/ <span class="period-text">ماهانه</span></span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>10 گیگابایت فضای ذخیره‌سازی</span>
+                            </li>
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>API پولی</span>
+                            </li>
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>پشتیبانی 24/7</span>
+                            </li>
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>دسترسی به هوش مصنوعی</span>
+                            </li>
+                        </ul>
+                        <a href="../Start/S.html" class="btn btn-primary btn-full">
+                            <span>خرید مستقیم</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- پلن حرفه‌ای -->
+                    <div class="pricing-card popular animate-on-scroll">
+                        <div class="popular-badge">
+                            <span>🏆 پرفروش</span>
+                        </div>
+                        <div class="pricing-header">
+                            <span class="pricing-icon">💎</span>
+                            <h3 class="pricing-name">حرفه‌ای</h3>
+                            <p class="pricing-description">برای حرفه‌ای‌ها</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-amount" data-monthly="648,000" data-yearly="640,000">648,000</span>
+                            <span class="price-currency">تومان</span>
+                            <span class="price-period">/ <span class="period-text">ماهانه</span></span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>همه امکانات اقتصادی</span>
+                            </li>
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>50 گیگابایت فضای ذخیره‌سازی</span>
+                            </li>
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>API حرفه‌ای</span>
+                            </li>
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>دسترسی به تمامی امکانات سایت</span>
+                            </li>
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>کانکت به نزدیک‌ترین سرور</span>
+                            </li>
+                        </ul>
+                        <a href="../Start/S.html" class="btn btn-primary btn-full btn-glow">
+                            <span>خرید مستقیم</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- پلن سازمانی -->
+                    <div class="pricing-card animate-on-scroll">
+                        <div class="pricing-header">
+                            <span class="pricing-icon">🏢</span>
+                            <h3 class="pricing-name">سازمانی</h3>
+                            <p class="pricing-description">برای شرکت‌های بزرگ</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-amount">تماس</span>
+                            <span class="price-currency">بگیرید</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>همه امکانات حرفه‌ای</span>
+                            </li>
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>فضای ذخیره‌سازی: انتخابی</span>
+                            </li>
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>مدیر اختصاصی</span>
+                            </li>
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>SLA اختصاصی</span>
+                            </li>
+                            <li class="feature-included">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>آموزش تیم</span>
+                            </li>
+                        </ul>
+                        <a href="../Start/S.html" class="btn btn-outline btn-full">
+                            <span>تماس با ما</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CTA SECTION ========== -->
+        <section class="cta">
+            <div class="cta-bg">
+                <div class="cta-gradient"></div>
+                <div class="cta-particles">
+                    <span></span><span></span><span></span>
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cta-content animate-on-scroll">
+                    <h2 class="cta-title">
+                        آماده‌اید شروع کنید؟
+                    </h2>
+                    <p class="cta-description">
+                        همین حالا ثبت‌نام کنید و از 14 روز استفاده رایگان بهره‌مند شوید
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="../Start/S.html" class="btn btn-light btn-large">
+                            <span>شروع رایگان</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="../Start/S.html" class="btn btn-outline-light btn-large">
+                            <span>تماس با ما</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== FOOTER ========== -->
+        <footer class="footer">
+            <div class="footer-wave">
+                <svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none">
+                    <path d="M0,60 C360,0 1080,120 1440,60 L1440,120 L0,120 Z" fill="currentColor"/>
+                </svg>
+            </div>
+
+            <div class="footer-particles">
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+                <span></span><span></span>
+            </div>
+
+            <div class="footer-glow"></div>
+
+            <div class="container">
+                <div class="footer-main">
+                    <div class="footer-brand animate-on-scroll">
+                        <a href="javascript:location.reload();" class="footer-logo" dir="ltr">
+                            <span class="logo-text">
+                                <span class="logo-letter logo-v">V</span>
+                                <span class="logo-letter logo-y">y</span>
+                                <span class="logo-letter logo-r">r</span>
+                            </span>
+                        </a>
+                        <p class="footer-description">
+                            پلتفرم نسل جدید با قدرت هوش مصنوعی.
+                            سریع‌تر، هوشمندتر و قدرتمندتر از همیشه.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Discord">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="footer-column animate-on-scroll">
+                            <h4 class="footer-title">محصولات</h4>
+                            <ul class="footer-menu">
+                                <li><a href="#features">امکانات</a></li>
+                                <li><a href="#pricing">قیمت‌گذاری</a></li>
+                                <li><a href="../Start/S.html">API</a></li>
+                                <li><a href="../Start/S.html">اینتگریشن‌ها</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column animate-on-scroll">
+                            <h4 class="footer-title">شرکت</h4>
+                            <ul class="footer-menu">
+                                <li><a href="../Start/S.html">درباره ما</a></li>
+                                <li><a href="../Start/S.html">بلاگ</a></li>
+                                <li><a href="../Start/S.html">استخدام</a></li>
+                                <li><a href="../Start/S.html">تماس</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column animate-on-scroll">
+                            <h4 class="footer-title">منابع</h4>
+                            <ul class="footer-menu">
+                                <li><a href="../Start/S.html">مستندات</a></li>
+                                <li><a href="../Start/S.html">آموزش</a></li>
+                                <li><a href="../Start/S.html">پشتیبانی</a></li>
+                                <li><a href="../Start/S.html">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column animate-on-scroll">
+                            <h4 class="footer-title">قانونی</h4>
+                            <ul class="footer-menu">
+                                <li><a href="../Start/S.html">حریم خصوصی</a></li>
+                                <li><a href="../Start/S.html">قوانین</a></li>
+                                <li><a href="../Start/S.html">کوکی‌ها</a></li>
+                                <li><a href="../Start/S.html">لایسنس</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter animate-on-scroll">
+                    <div class="newsletter-content">
+                        <h4 class="newsletter-title">عضویت در خبرنامه</h4>
+                        <p class="newsletter-description">از آخرین اخبار و آپدیت‌ها باخبر شوید</p>
+                    </div>
+                    <form class="newsletter-form" action="../Start/S.html">
+                        <div class="input-wrapper">
+                            <input type="email" placeholder="ایمیل خود را وارد کنید" required>
+                            <button type="submit" class="btn btn-primary">
+                                <span>عضویت</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p><span class="footer-brand-text" dir="ltr">Vyr</span> - <span id="current-year"></span> تمامی حقوق محفوظ است.</p>
+                    </div>
+                    <div class="footer-badges">
+                        <span class="badge">🔒 SSL Secure</span>
+                        <span class="badge">⚡ 99.9% Uptime</span>
+                        <span class="badge">🌍 Global CDN</span>
+                        <span class="badge ping-badge">📡 Ping: <span id="user-ping">--</span>ms</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-line">
+                <div class="line-glow"></div>
+            </div>
+        </footer>
+
+        <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 15l-6-6-6 6"/>
+            </svg>
+        </button>
+
+    </div>
+
+    <script>
+        // ===== LOADING ANIMATION =====
+        document.addEventListener('DOMContentLoaded', function() {
+            const loader = document.getElementById('loader');
+            const mainContent = document.getElementById('main-content');
+            const progressBar = document.querySelector('.progress-bar');
+            const progressText = document.querySelector('.progress-text');
+            
+            let progress = 0;
+            const loadingDuration = 4000;
+            const interval = 50;
+            const increment = 100 / (loadingDuration / interval);
+            
+            const loadingInterval = setInterval(() => {
+                progress += increment;
+                if (progress >= 100) {
+                    progress = 100;
+                    clearInterval(loadingInterval);
+                    
+                    setTimeout(() => {
+                        loader.classList.add('fade-out');
+                        setTimeout(() => {
+                            loader.style.display = 'none';
+                            mainContent.classList.remove('hidden');
+                            mainContent.classList.add('visible');
+                            initAnimations();
+                            measurePing();
+                        }, 500);
+                    }, 500);
+                }
+                progressBar.style.width = progress + '%';
+                progressText.textContent = Math.round(progress) + '%';
+            }, interval);
+            
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
+
+        // ===== PING MEASUREMENT =====
+        function measurePing() {
+            const pingElement = document.getElementById('user-ping');
+            
+            function updatePing() {
+                const start = performance.now();
+                fetch(window.location.href, { method: 'HEAD', cache: 'no-cache' })
+                    .then(() => {
+                        const ping = Math.round(performance.now() - start);
+                        pingElement.textContent = ping;
+                        
+                        const badge = pingElement.closest('.ping-badge');
+                        if (ping < 100) {
+                            badge.style.borderColor = '#22c55e';
+                            badge.style.color = '#22c55e';
+                        } else if (ping < 300) {
+                            badge.style.borderColor = '#f59e0b';
+                            badge.style.color = '#f59e0b';
+                        } else {
+                            badge.style.borderColor = '#ef4444';
+                            badge.style.color = '#ef4444';
+                        }
+                    })
+                    .catch(() => {
+                        pingElement.textContent = '--';
+                    });
+            }
+            
+            updatePing();
+            setInterval(updatePing, 5000);
+        }
+
+        // ===== THEME TOGGLE =====
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', savedTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // ===== MOBILE MENU =====
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // ===== DROPDOWN MENUS =====
+        const dropdowns = document.querySelectorAll('.has-dropdown');
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('mouseenter', () => {
+                dropdown.classList.add('open');
+            });
+            dropdown.addEventListener('mouseleave', () => {
+                dropdown.classList.remove('open');
+            });
+        });
+
+        // ===== HEADER SCROLL EFFECT =====
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // ===== SCROLL TO TOP =====
+        const scrollTopBtn = document.getElementById('scroll-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+        
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ===== CUSTOM CURSOR - ONLY FOR HERO =====
+        const cursor = document.getElementById('custom-cursor');
+        const follower = document.getElementById('cursor-follower');
+        const heroSection = document.getElementById('home');
+        
+        let cursorVisible = false;
+        
+        document.addEventListener('mousemove', (e) => {
+            const heroRect = heroSection.getBoundingClientRect();
+            const isInHero = e.clientY >= heroRect.top && e.clientY <= heroRect.bottom;
+            
+            if (isInHero) {
+                if (!cursorVisible) {
+                    cursor.style.opacity = '1';
+                    follower.style.opacity = '0.5';
+                    cursorVisible = true;
+                }
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+                
+                setTimeout(() => {
+                    follower.style.left = e.clientX + 'px';
+                    follower.style.top = e.clientY + 'px';
+                }, 100);
+            } else {
+                if (cursorVisible) {
+                    cursor.style.opacity = '0';
+                    follower.style.opacity = '0';
+                    cursorVisible = false;
+                }
+            }
+        });
+        
+        heroSection.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.classList.add('hover');
+                follower.classList.add('hover');
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hover');
+                follower.classList.remove('hover');
+            });
+        });
+
+        // ===== PRICING TOGGLE =====
+        const pricingSwitch = document.getElementById('pricing-switch');
+        const priceAmounts = document.querySelectorAll('.price-amount[data-monthly]');
+        const periodTexts = document.querySelectorAll('.period-text');
+        
+        pricingSwitch.addEventListener('change', () => {
+            const isYearly = pricingSwitch.checked;
+            
+            priceAmounts.forEach(el => {
+                el.textContent = isYearly ? el.dataset.yearly : el.dataset.monthly;
+            });
+            
+            periodTexts.forEach(el => {
+                el.textContent = isYearly ? 'سالانه' : 'ماهانه';
+            });
+        });
+
+        // ===== SCROLL ANIMATIONS =====
+        function initAnimations() {
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animated');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            animatedElements.forEach(el => observer.observe(el));
+            
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const duration = 2000;
+                const step = target / (duration / 16);
+                let current = 0;
+                
+                const updateCounter = () => {
+                    current += step;
+                    if (current < target) {
+                        counter.textContent = Math.round(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+                
+                setTimeout(updateCounter, 1000);
+            });
+        }
+
+        // ===== SMOOTH SCROLL =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    navMenu.classList.remove('active');
+                    mobileMenuToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
